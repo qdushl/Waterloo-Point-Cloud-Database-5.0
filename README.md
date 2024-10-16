@@ -2,16 +2,12 @@
 
 This database was created by Honglei Su ([suhonglei@qdu.edu.cn](mailto:suhonglei@qdu.edu.cn)) and Dongshuai Duan(dsduan00@gmail.com) from Qingdao University in 2024. We welcome everyone to carry on the test and propose the modification opinion. If you use our database [WPC5.0]( https://drive.google.com/drive/folders/1WF5MHuixfaWm_TsSsv9ClIh0N7z2pXou?usp=sharing) (a Google account required) in your paper, please cite our paper:
 
-@article{duan2024perceptual,
-
-   title={Perceptual Quality Assessment of Octree-RAHT Encoded 3D Point Clouds}, 
-   
-   author={Duan, Dongshuai and Su, Honglei and Liu, Qi and Yuan, Hui and Gao, Wei and Song, Jiarun and Wang, Zhou},
-   
-   journal={arXiv preprint arXiv:2410.06729}, 
-   
+@article{duan2024perceptual, 
+   title={Perceptual Quality Assessment of Octree-RAHT Encoded 3D Point Clouds},  
+   author={Duan, Dongshuai and Su, Honglei and Liu, Qi and Yuan, Hui and Gao, Wei and Song, Jiarun and Wang, Zhou}, 
+   journal={arXiv preprint arXiv:2410.06729},  
    year={2024} 
-}
+} 
 
 The WPC5.0 database is composed of 400 Octree-RAHT encoded point clouds and corresponding bitstreams whose 20 original point clouds (Bag, Banana, Biscuits, Cake, Cauliflower, Flowerpot, Glasses_case, Honeydew_melon, House, Litchi, Mushroom, Pen_container, Pineapple, Ping-pong_bat, Puer_tea, Pumpkin, Ship, Statue, Stone, Tool_box) are from the [WPC database](https://github.com/qdushl/Waterloo-Point-Cloud-Database). Each original point cloud is encoded by 4 geometry parameters PQS{1, 0.5, 0.25, 0.125} and 5 texture parameters QP{22, 28, 34, 40, 46} to produce 20 distortion levels. The rest of the encoding parameters are set with default values. The subjective test settings and raw data processing are the same as those in the WPC database.<br/><br/>
 
