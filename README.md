@@ -2,10 +2,14 @@
 
 This database was created by Honglei Su ([suhonglei@qdu.edu.cn](mailto:suhonglei@qdu.edu.cn)) and Dongshuai Duan(dsduan00@gmail.com) from Qingdao University in 2024. We welcome everyone to carry on the test and propose the modification opinion. If you use our database [WPC5.0]( https://drive.google.com/drive/folders/1WF5MHuixfaWm_TsSsv9ClIh0N7z2pXou?usp=sharing) (a Google account required) in your paper, please cite our paper:
 
-@article{duan2024perceptual, 
+@article{duan2024perceptual,
+
    title={Perceptual Quality Assessment of Octree-RAHT Encoded 3D Point Clouds}, 
-   author={Duan, Dongshuai and Su, Honglei and Liu, Qi and Yuan, Hui and Gao, Wei and Song, Jiarun and Wang, Zhou}, 
+   
+   author={Duan, Dongshuai and Su, Honglei and Liu, Qi and Yuan, Hui and Gao, Wei and Song, Jiarun and Wang, Zhou},
+   
    journal={arXiv preprint arXiv:2410.06729}, 
+   
    year={2024} 
 }
 
