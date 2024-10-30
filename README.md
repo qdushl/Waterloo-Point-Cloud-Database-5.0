@@ -2,12 +2,12 @@
 
 This database was created by Honglei Su ([suhonglei@qdu.edu.cn](mailto:suhonglei@qdu.edu.cn)) and Dongshuai Duan(dsduan00@gmail.com) from Qingdao University in 2024. We welcome everyone to carry on the test and propose the modification opinion. If you use our database [WPC5.0]( https://drive.google.com/drive/folders/1WF5MHuixfaWm_TsSsv9ClIh0N7z2pXou?usp=sharing) (a Google account required) in your paper, please cite our paper:
 
-@article{duan2024perceptual,   
- title={Perceptual Quality Assessment of Octree-RAHT Encoded 3D Point Clouds},   
- author={Duan, Dongshuai and Su, Honglei and Liu, Qi and Yuan, Hui and Gao, Wei and Song, Jiarun and Wang, Zhou},   
- journal={arXiv preprint arXiv:2410.06729},   
- year={2024}   
-} 
+@article{duan2024perceptual,  
+title={Perceptual Quality Assessment of Octree-RAHT Encoded 3D Point Clouds},  
+author={Duan, Dongshuai and Su, Honglei and Liu, Qi and Yuan, Hui and Gao, Wei and Song, Jiarun and Wang, Zhou},  
+journal={arXiv preprint arXiv:2410.06729},  
+year={2024}  
+}
 
 The WPC5.0 database is composed of 400 Octree-RAHT encoded point clouds and corresponding bitstreams whose 20 original point clouds (Bag, Banana, Biscuits, Cake, Cauliflower, Flowerpot, Glasses_case, Honeydew_melon, House, Litchi, Mushroom, Pen_container, Pineapple, Ping-pong_bat, Puer_tea, Pumpkin, Ship, Statue, Stone, Tool_box) are from the [WPC database](https://github.com/qdushl/Waterloo-Point-Cloud-Database). Each original point cloud is encoded by 4 geometry parameters PQS{1, 0.5, 0.25, 0.125} and 5 texture parameters QP{22, 28, 34, 40, 46} to produce 20 distortion levels. The rest of the encoding parameters are set with default values. The subjective test settings and raw data processing are the same as those in the WPC database.<br/><br/>
 
@@ -21,21 +21,21 @@ In addition, we also provide the scores predicted by the comparison algorithms m
 
 ## Running
 
-We provide tmc3.exe generated according to the above settings. There are different usage methods for perceptual quality assessment of a single point cloud or multiple point clouds.
+We provide streamPCQ_OR.exe generated according to the above settings. There are different usage methods for perceptual quality assessment of a single point cloud or multiple point clouds.
 
 ### Single assessment
 
 For perceptual quality assessment of a single point cloud stream, open a terminal window in the working directory and execute the following script:
 
 ```console
-tmc3.exe -c decoder.cfg --compressedStreamPath="your_file_name.bin" --reconstructedDataPath=" your_file_name.ply"
+streamPCQ_OR.exe -c decoder.cfg --compressedStreamPath="your_file_name.bin" --reconstructedDataPath=" your_file_name.ply"
 ```
 
 Note that the file name in the script should be set to the corresponding file name.
 
 ### Batch assessment
 
-For perceptual quality assessment of batch point cloud streams, we have generated the corresponding batch file streamPCQ-OR.bat. Simply put streamPCQ-OR.bat, decoder.cfg, tmc3.exe and the point cloud stream files that need quality assessment in the same folder, and double-click streamPCQ-OR.bat to perform perceptual quality assessment of all point cloud stream files in the current folder. The assessment results are saved in streamPCQ-OR_predMOS.xlsx.
+For perceptual quality assessment of batch point cloud streams, we have generated the corresponding batch file streamPCQ-OR.bat. Simply put streamPCQ-OR.bat, decoder.cfg, streamPCQ_OR.exe and the point cloud stream files that need quality assessment in the same folder, and double-click streamPCQ-OR.bat to perform perceptual quality assessment of all point cloud stream files in the current folder. The assessment results are saved in streamPCQ-OR_predMOS.xlsx.
 
 ### Demo
 
